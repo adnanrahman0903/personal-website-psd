@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/***************** COMMON CSS *****************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***************** REUSEABLE CSS *****************/
+section {
+  padding: 120px 0;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #ff2b4a;
+  border-radius: 3px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.7s;
+  padding: 15px 0;
+  width: 200px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: transparent;
+  border: 1px solid #ff2b4a;
+  color: #ff2b4a;
+}
+
+/***************** HERO SECTION CSS *****************/
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  max-width: 1080px;
+}
+
+.container .logo {
+  float: left;
+  margin-top: 50px;
+}
+
+.container .menu {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  float: right;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 50px;
+  padding: 3px;
+}
+
+.container-text {
+  width: 1180px;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-text h1 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 65px;
+  letter-spacing: 13px;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+h1::before {
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+h1::after {
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+.container-text span {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 28px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+/***************** ABOUT SECTION CSS *****************/
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+}
+
+.about-item-left .author-img {
+  width: 100%;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+.about-item-right {
+  padding-top: 65px;
+}
+
+.about-item-right .heading,
+.section-title p {
+  color: #494949;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 45px;
+}
+
+.about-item-right .description {
+  color: #494949;
+  letter-spacing: 1px;
+  padding-bottom: 55px;
+}
+
+#working-process {
+  background: #f6f6f6;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.working-skills {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+
+.working-skills .skills {
+  border-radius: 3px;
+  padding: 80px 0;
+}
+
+.skills:nth-child(1) {
+  background-color: #10c6fc;
+}
+.skills:nth-child(2) {
+  background-color: #835aeb;
+}
+.skills:nth-child(3) {
+  background-color: #002453;
+}
+.skills:nth-child(4) {
+  background-color: #ff2b4a;
+}
+
+.skills .lni {
+  font-size: 40px;
+}
+
+.skills h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
