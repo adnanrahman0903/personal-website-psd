@@ -25,6 +25,10 @@ h4 {
   font-weight: 700;
 }
 
+p {
+  line-height: 28px;
+}
+
 a {
   text-decoration: none;
 }
@@ -160,7 +164,7 @@ h1::after {
 }
 
 .about-item-right {
-  margin-top: 65px;
+  margin-top: 30px;
 }
 
 .about-item-right .heading,
@@ -273,4 +277,37 @@ h1::after {
 .portfolio-img img {
   width: 100%;
   height: 270px;
+}
+
+/***************** TESTIMONIAL SECTION CSS *****************/
+#testimonial {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/testimonial.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial-container {
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial-items p {
+  margin: 50px 0;
+}
+
+.testimonial-items .signature {
+  margin-bottom: 25px;
+}
+
+.testimonial-items h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-items span {
+  font-size: 14px;
 }
