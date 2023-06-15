@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-item-left .author-img {
+    width: 90%;
+  }
+
+  .working-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-img:nth-child(5) {
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 8px;
+  }
+
+  .container-text h1 {
+    letter-spacing: 3px;
+  }
+
+  .container-text span {
+    font-size: 200%;
+  }
+
+  .about-item-left .author-img {
+    width: 100%;
+  }
+
+  .working-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+}

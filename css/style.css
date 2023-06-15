@@ -1,23 +1,19 @@
 /***************** GOOGLE FONT *****************/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 
 /***************** COMMON CSS *****************/
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 400;
   text-rendering: optimizeLegibility;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 
 h1,
@@ -30,6 +26,7 @@ h4 {
 
 p {
   line-height: 28px;
+  text-align: justify;
 }
 
 a {
@@ -39,6 +36,11 @@ a {
 ul,
 li {
   list-style: none;
+}
+
+p,
+span {
+  font-size: 160%;
 }
 
 /***************** REUSEABLE CSS *****************/
@@ -54,7 +56,6 @@ section {
   border-radius: 3px;
   color: #ffffff;
   display: inline-block;
-  font-weight: 500;
   text-align: center;
   transition: 0.5s;
   padding: 15px 0;
@@ -73,7 +74,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 40px;
+  font-size: 400%;
   margin-bottom: 30px;
 }
 
@@ -102,7 +103,7 @@ section {
   border-radius: 5px;
   color: #ffffff;
   float: right;
-  font-size: 30px;
+  font-size: 300%;
   font-weight: 700;
   margin-top: 50px;
   padding: 3px;
@@ -121,7 +122,7 @@ section {
 .container-text h1 {
   color: #ffffff;
   display: inline-block;
-  font-size: 65px;
+  font-size: 600%;
   letter-spacing: 13px;
   line-height: 100px;
   text-transform: uppercase;
@@ -146,7 +147,7 @@ h1::after {
 .container-text span {
   color: #ffffff;
   display: inline-block;
-  font-size: 28px;
+  font-size: 250%;
   margin: 0;
   margin-top: 20px;
 }
@@ -179,8 +180,9 @@ h1::after {
 .about-item-right .heading,
 .section-title p {
   color: #494949;
-  font-size: 18px;
+  font-size: 180%;
   font-weight: 700;
+  text-align: center;
   margin-bottom: 45px;
 }
 
@@ -188,6 +190,13 @@ h1::after {
   color: #494949;
   letter-spacing: 1px;
   margin-bottom: 55px;
+}
+
+.btn-primary a,
+.form-btn input[type="submit"] {
+  font-size: 160%;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /***************** WORKING SECTION *****************/
@@ -222,11 +231,11 @@ h1::after {
 }
 
 .skills .lni {
-  font-size: 40px;
+  font-size: 400%;
 }
 
 .skills h4 {
-  font-size: 18px;
+  font-size: 180%;
   text-transform: uppercase;
   margin-top: 30px;
 }
@@ -262,8 +271,13 @@ h1::after {
 
 .experience-item h2,
 .education-item h2 {
-  font-size: 26px;
+  font-size: 260%;
   margin-bottom: 45px;
+}
+
+.experience-item h3,
+.education-item h3 {
+  font-size: 180%;
 }
 
 .job span,
@@ -290,7 +304,7 @@ h1::after {
 
 /***************** TESTIMONIAL SECTION *****************/
 #testimonial {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../img/testimonial.jpg);
   /* background-attachment: fixed; */
   background-position: center;
@@ -305,7 +319,7 @@ h1::after {
 }
 
 .testimonial-items {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   padding: 45px 30px;
 }
 
@@ -318,12 +332,12 @@ h1::after {
 }
 
 .testimonial-items h4 {
-  font-size: 18px;
+  font-size: 180%;
   margin-bottom: 10px;
 }
 
 .testimonial-items span {
-  font-size: 14px;
+  font-size: 140%;
 }
 
 /***************** CONTACT SECTION *****************/
@@ -353,7 +367,7 @@ h1::after {
 }
 
 .contact-items h3 {
-  font-size: 26px;
+  font-size: 260%;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -375,7 +389,7 @@ h1::after {
   border: 1px solid #ffffff;
   box-sizing: border-box;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 140%;
   font-weight: 700;
   margin: 10px 0;
   padding: 10px;
@@ -401,7 +415,7 @@ footer {
 
 .footer-icons ul li a .lni {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 200%;
   margin-bottom: 15px;
   padding: 0 15px;
   transition: 0.5s;
