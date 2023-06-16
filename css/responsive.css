@@ -35,10 +35,6 @@
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .portfolio-img:nth-child(5) {
-    grid-column: 1/2;
-  }
 }
 
 @media screen and (max-width: 576px) {

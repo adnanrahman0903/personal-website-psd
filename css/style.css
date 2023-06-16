@@ -25,6 +25,7 @@ h4 {
 }
 
 p {
+  margin-top: 0;
   line-height: 28px;
   text-align: justify;
 }
@@ -32,10 +33,18 @@ p {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: none;
+}
 
 ul,
 li {
   list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 p,
@@ -74,13 +83,14 @@ section {
 }
 
 .section-title h2 {
+  color: #000000;
   font-size: 400%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 /***************** HERO SECTION *****************/
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -93,12 +103,12 @@ section {
   max-width: 1080px;
 }
 
-.container .logo {
+nav .logo {
   float: left;
   margin-top: 50px;
 }
 
-.container .menu {
+nav .nav-icon {
   border: 2px solid #ffffff;
   border-radius: 5px;
   color: #ffffff;
@@ -107,6 +117,15 @@ section {
   font-weight: 700;
   margin-top: 50px;
   padding: 3px;
+}
+
+nav.uk-sticky-fixed {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+nav.uk-sticky-fixed .logo,
+nav.uk-sticky-fixed .nav-icon {
+  margin: 20px 0;
 }
 
 .container-text {
@@ -183,7 +202,7 @@ h1::after {
   font-size: 180%;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .about-item-right .description {
@@ -235,6 +254,7 @@ h1::after {
 }
 
 .skills h4 {
+  color: #ffffff;
   font-size: 180%;
   text-transform: uppercase;
   margin-top: 30px;
@@ -271,13 +291,16 @@ h1::after {
 
 .experience-item h2,
 .education-item h2 {
+  color: #ffffff;
   font-size: 260%;
   margin-bottom: 45px;
 }
 
 .experience-item h3,
 .education-item h3 {
+  color: #ffffff;
   font-size: 180%;
+  margin-bottom: 0;
 }
 
 .job span,
@@ -287,19 +310,52 @@ h1::after {
 }
 
 /***************** PORTFOLIO SECTION *****************/
+.filter-items {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-items button {
+  background-color: #ff2b4a;
+  border: 1px solid #ff2b4a;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0 5px 5px;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+
+.filter-items button:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.filter-items .mixitup-control-active {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px 15px;
 }
 
-.portfolio-img:nth-child(5) {
-  grid-column: 1/3;
-}
-
 .portfolio-img img {
   width: 100%;
   height: 270px;
+}
+
+.uk-lightbox {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.uk-lightbox-toolbar {
+  font-size: 180%;
+  font-weight: 700;
 }
 
 /***************** TESTIMONIAL SECTION *****************/
@@ -332,7 +388,9 @@ h1::after {
 }
 
 .testimonial-items h4 {
+  color: #ffffff;
   font-size: 180%;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -367,6 +425,7 @@ h1::after {
 }
 
 .contact-items h3 {
+  color: #ffffff;
   font-size: 260%;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -406,7 +465,8 @@ footer {
   background: #222222;
   color: #ffffff;
   text-align: center;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 25px;
 }
 
 .footer-icons ul li {
@@ -427,4 +487,18 @@ footer {
 
 .footer-icons ul li a .lni:hover {
   color: #ff2b4a;
+}
+
+.totop .uk-totop {
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+  margin-top: 20px;
+  padding: 10px 6px;
+  color: #f5f5f5;
+  transition: 0.5s;
+}
+
+.totop .uk-totop:hover {
+  background: #ffffff;
+  color: #000000;
 }
