@@ -98,9 +98,9 @@ section {
       from(rgba(0, 0, 0, 0.6)),
       to(rgba(0, 0, 0, 0.6))
     ),
-    url(../img/banner.jpg);
+    url(../img/6.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/banner.jpg);
+    url(../img/6.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
