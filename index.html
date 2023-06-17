@@ -1,331 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paul Lapkin</title>
 
-    <!------------------ LINE ICONS ------------------>
-    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Lapkin</title>
 
-    <!------------------ UIKIT CSS ------------------>
-    <link rel="stylesheet" href="css/uikit.min.css" />
+  <!-- LINE ICONS  -->
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
 
-    <!------------------ STYLE CSS ------------------>
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- UIKIT CSS  -->
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <!-- STYLE CSS  -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!------------------ RESPONSIVE CSS ------------------>
-    <link rel="stylesheet" href="css/responsive.css" />
-  </head>
-  <body>
-    <!------------------ START HERO SECTION ------------------>
-    <header id="hero">
-      <nav uk-sticky="start: 400px; animation: uk-animation-slide-top">
-        <div class="container">
-          <a href="#"><img src="img/logo.png" alt="" class="logo" /></a>
-          <a><i class="lni lni-menu nav-icon"></i></a>
-        </div>
-      </nav>
-      <div class="container-text">
-        <h1 class="uk-animation-slide-left-medium">Paul Lapkin</h1>
-        <br />
-        <span class="uk-animation-slide-right-medium"
-          >#User Experience #Music #Creative Direction</span
-        >
-      </div>
-    </header>
-    <!------------------ END HERO SECTION ------------------>
+  <!-- RESPONSIVE CSS  -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
 
-    <!------------------ START ABOUT SECTION ------------------>
-    <section id="about">
+<body>
+  <!-- START HERO SECTION  -->
+  <header id="hero" class="scroll-fast">
+    <nav uk-sticky="start: 400px; animation: uk-animation-slide-top">
       <div class="container">
-        <div class="about-container">
-          <div class="about-item-left">
-            <img src="img/about.jpg" alt="paul" class="author-img" />
-          </div>
-          <div class="about-item-right">
-            <p class="heading">
-              Hi, I’m Paul Lapkin, Experience Crafter from Canada.
-            </p>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo
-              consequat. <br /><br />
-              Duis autem vel eum iriure dolorin hendrerit in vulputate velit
-              esse molestie consequat, vel illum dolore eu feugiat nulla
-              facilisis at vero eros et accumsan et iusto odio dignissim qui
-              blandit praesent luptatum zzril delenit augue duis dolore.
-            </p>
-            <div class="btn-primary">
-              <a href="" class="btn btn-hire">Hire Me!</a>
-            </div>
-          </div>
+        <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+        <a><i class="lni lni-menu nav-icon" onclick="openMenu()"></i></a>
+      </div>
+      <div class="menu-container" id="navbar" onclick="closeMenu()">
+        <div class="close-btn" onclick="closeMenu()">
+          <i class="lni lni-close"></i>
+        </div>
+        <div class="menu-item">
+          <ul>
+            <li>
+              <a onclick="closeMenu()" href="#hero">home</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#about">about</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#process">process</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#experience">experience</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#portfolio">portfolio</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#testimonial">testimonial</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#contact">contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!------------------ END ABOUT SECTION ------------------>
+    </nav>
+    <div class="container-text">
+      <h1 uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+        Paul Lapkin
+      </h1>
+      <br>
+      <span uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+        #User Experience #Music #Creative Direction
+      </span>
+    </div>
+    <div class="scroll-down">
+      <a href="#about">
+        <i class="lni lni-arrow-down-circle"></i>
+      </a>
+    </div>
+  </header>
+  <!-- END HERO SECTION  -->
 
-    <!------------------ START WORKING SECTION ------------------>
-    <section id="working-process">
-      <div class="container">
-        <div class="working-container">
-          <div class="section-title">
-            <h2>My Working Process</h2>
-            <p>Hi, I’m Paul Lapkin, Experience Crafter from Canada.</p>
-          </div>
-          <div class="working-skills">
-            <div class="skills">
-              <i class="lni lni-display"></i>
-              <h4>Design</h4>
-            </div>
-            <div class="skills">
-              <i class="lni lni-grow"></i>
-              <h4>Development</h4>
-            </div>
-            <div class="skills">
-              <i class="lni lni-react"></i>
-              <h4>Testing</h4>
-            </div>
-            <div class="skills">
-              <i class="lni lni-plane"></i>
-              <h4>Launch</h4>
-            </div>
-          </div>
+  <!-- START ABOUT SECTION  -->
+  <section id="about" class="scroll-fast">
+    <div class="container">
+      <div class="about-container">
+        <div class="about-item-left" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+          <img src="img/about.jpg" alt="paul" class="author-img">
         </div>
-      </div>
-    </section>
-    <!------------------ END WORKING SECTION ------------------>
-
-    <!------------------ START EXPERIENCE SECTION ------------------>
-    <section id="experience">
-      <div class="container">
-        <div class="experience-container">
-          <div class="experience-item">
-            <h2>Work Experience</h2>
-            <div class="job">
-              <h3>Mad Max Design</h3>
-              <span>OCT 2013 - JUNE 2014</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-            </div>
-            <hr />
-            <div class="job">
-              <h3>Crazy Design</h3>
-              <span>OCT 2014 - JUNE 2015</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-            </div>
-          </div>
-          <div class="education-item">
-            <h2>Education</h2>
-            <div class="education">
-              <h3>Maddison University</h3>
-              <span>OCT 2013 - JUNE 2014</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-            </div>
-            <hr />
-            <div class="education">
-              <h3>Max Design & Art Institute</h3>
-              <span>OCT 2014 - Present</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-            </div>
+        <div class="about-item-right" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
+          <h5 class="heading">
+            Hi, I’m Paul Lapkin, Experience Crafter from Canada.
+          </h5>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+            tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo
+            consequat. <br><br>
+            Duis autem vel eum iriure dolorin hendrerit in vulputate velit
+            esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore.
+          </p>
+          <div class="btn-primary">
+            <a href="" class="btn btn-hire">Hire Me!</a>
           </div>
         </div>
       </div>
-    </section>
-    <!------------------ END EXPERIENCE SECTION ------------------>
+    </div>
+  </section>
+  <!-- END ABOUT SECTION  -->
 
-    <!------------------ START PORTFOLIO SECTION ------------------>
-    <section id="portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2>My Latest Works</h2>
+  <!-- START PROCESS SECTION  -->
+  <section id="process" class="scroll-fast">
+    <div class="container">
+      <div class="working-container">
+        <div class="section-title" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+          <h2>My Working Process</h2>
           <p>Hi, I’m Paul Lapkin, Experience Crafter from Canada.</p>
         </div>
-        <div class="filter-items">
-          <button type="button" data-filter="all">All</button>
-          <button type="button" data-filter=".design">Design</button>
-          <button type="button" data-filter=".development">Development</button>
-          <button type="button" data-filter=".wordpress">WordPress</button>
-        </div>
-        <div class="portfolio-container" uk-lightbox="animation: fade">
-          <div class="portfolio-img mix design wordpress">
-            <a href="img/w1.jpg" data-caption="1">
-              <img src="img/w1.jpg" alt=""
-            /></a>
+        <div class="working-skills" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 500">
+          <div class="skills">
+            <i class="lni lni-display"></i>
+            <h4>Design</h4>
           </div>
-          <div class="portfolio-img mix development wordpress">
-            <a href="img/w2.jpg" data-caption="2" data-caption="1"
-              ><img src="img/w2.jpg" alt=""
-            /></a>
+          <div class="skills">
+            <i class="lni lni-grow"></i>
+            <h4>Development</h4>
           </div>
-          <div class="portfolio-img mix wordpress">
-            <a href="img/w3.jpg" data-caption="3"
-              ><img src="img/w3.jpg" alt=""
-            /></a>
+          <div class="skills">
+            <i class="lni lni-react"></i>
+            <h4>Testing</h4>
           </div>
-          <div class="portfolio-img mix design">
-            <a href="img/w4.jpg" data-caption="4"
-              ><img src="img/w4.jpg" alt=""
-            /></a>
-          </div>
-          <div class="portfolio-img mix development">
-            <a href="img/w5.jpg" data-caption="5"
-              ><img src="img/w5.jpg" alt=""
-            /></a>
-          </div>
-          <div class="portfolio-img mix wordpress">
-            <a href="img/w6.jpg" data-caption="6"
-              ><img src="img/w6.jpg" alt=""
-            /></a>
-          </div>
-          <div class="portfolio-img mix design">
-            <a href="img/w7.jpg" data-caption="7"
-              ><img src="img/w7.jpg" alt=""
-            /></a>
-          </div>
-          <div class="portfolio-img mix development">
-            <a href="img/w8.jpg" data-caption="8"
-              ><img src="img/w8.jpg" alt=""
-            /></a>
+          <div class="skills">
+            <i class="lni lni-plane"></i>
+            <h4>Launch</h4>
           </div>
         </div>
       </div>
-    </section>
-    <!------------------ END PORTFOLIO SECTION ------------------>
+    </div>
+  </section>
+  <!-- END PROCESS SECTION  -->
 
-    <!------------------ START TESTIMONIAL SECTION ------------------>
-    <section id="testimonial">
-      <div class="container">
-        <div class="testimonial-container">
-          <div class="testimonial-items">
-            <div class="quote">
-              <img src="img/quote.png" alt="" />
-            </div>
+  <!-- START EXPERIENCE SECTION  -->
+  <section id="experience" class="scroll-fast">
+    <div class="container">
+      <div class="experience-container">
+        <div class="experience-item" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+          <h2>Work Experience</h2>
+          <div class="job">
+            <h3>Mad Max Design</h3>
+            <span>OCT 2013 - JUNE 2014</span>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo
-              consequat.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat.
             </p>
-            <div class="signature">
-              <img src="img/signature.png" alt="" />
-            </div>
-            <h4>Deniel Croft</h4>
-            <span>Creative Designer, Levy</span>
+          </div>
+          <hr>
+          <div class="job">
+            <h3>Crazy Design</h3>
+            <span>OCT 2014 - JUNE 2015</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+        <div class="education-item" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
+          <h2>Education</h2>
+          <div class="education">
+            <h3>Maddison University</h3>
+            <span>OCT 2013 - JUNE 2014</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat.
+            </p>
+          </div>
+          <hr>
+          <div class="education">
+            <h3>Max Design & Art Institute</h3>
+            <span>OCT 2014 - Present</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <!------------------ END TESTIMONIAL SECTION ------------------>
+    </div>
+  </section>
+  <!-- END EXPERIENCE SECTION  -->
 
-    <!------------------ START CONTACT SECTION ------------------>
-    <section id="contact">
-      <div class="container">
-        <div class="contact-container">
-          <div class="contact-items">
-            <h3>Leave a message</h3>
-            <form action="#" method="post">
-              <div class="single-form">
-                <input type="text" placeholder="Name*" required />
-              </div>
-              <div class="single-form">
-                <input type="email" placeholder="Email*" required />
-              </div>
-              <div class="single-form">
-                <input type="text" placeholder="Subject*" required />
-              </div>
-              <div class="single-form">
-                <textarea
-                  style="resize: none"
-                  cols="30"
-                  rows="10"
-                  placeholder="Message*"
-                  required></textarea>
-              </div>
-              <div class="form-btn">
-                <input type="submit" value="Hire Me!" class="btn" />
-              </div>
-            </form>
-          </div>
-          <div class="contact-items contact-items-right">
-            <div class="nested-items">
-              <h3>Address</h3>
-              <p>
-                Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134,
-                Block SE(A), Gulshan-1, Dhaka 1212.
-              </p>
-            </div>
-            <div class="nested-items">
-              <h3>Phone</h3>
-              <p>
-                +880 174 037 6995 <br />
-                +880 191 448 6969
-              </p>
-            </div>
-            <div class="nested-items">
-              <h3>Web</h3>
-              <p>
-                Mail: quicksayed@gmail.com <br />
-                Website: dribbble.com/alisayed
-              </p>
-            </div>
-          </div>
+  <!-- START PORTFOLIO SECTION -->
+  <section id="portfolio" class="scroll-fast">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Latest Works</h2>
+        <p>Hi, I’m Paul Lapkin, Experience Crafter from Canada.</p>
+      </div>
+      <div class="filter-items" uk-scrollspy="cls: uk-animation-scale-up; repeat: true; delay: 500">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter=".design">Design</button>
+        <button type="button" data-filter=".development">Development</button>
+        <button type="button" data-filter=".wordpress">WordPress</button>
+      </div>
+      <div class="portfolio-container" uk-lightbox="animation: fade">
+        <div class="portfolio-img mix design wordpress">
+          <a href="img/w1.jpg" data-caption="1">
+            <img src="img/w1.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-img mix development wordpress">
+          <a href="img/w2.jpg" data-caption="2" data-caption="1">
+            <img src="img/w2.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-img mix wordpress">
+          <a href="img/w3.jpg" data-caption="3">
+            <img src="img/w3.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-img mix design">
+          <a href="img/w4.jpg" data-caption="4">
+            <img src="img/w4.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-img mix development">
+          <a href="img/w5.jpg" data-caption="5">
+            <img src="img/w5.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-img mix wordpress">
+          <a href="img/w6.jpg" data-caption="6">
+            <img src="img/w6.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-img mix design">
+          <a href="img/w7.jpg" data-caption="7">
+            <img src="img/w7.jpg" alt="">
+          </a>
+        </div>
+        <div class="portfolio-img mix development">
+          <a href="img/w8.jpg" data-caption="8">
+            <img src="img/w8.jpg" alt="">
+          </a>
         </div>
       </div>
-    </section>
-    <!------------------ END CONTACT SECTION ------------------>
+    </div>
+  </section>
+  <!-- END PORTFOLIO SECTION  -->
 
-    <!------------------ START FOOTER SECTION ------------------>
-    <footer id="footer">
-      <div class="footer-icons">
-        <ul>
-          <li>
-            <a href=""><i class="lni lni-facebook"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="lni lni-twitter-original"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="lni lni-linkedin"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="lni lni-github"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="lni lni-dribbble"></i></a>
-          </li>
-        </ul>
-        <span> Copyright &copy; Ali Sayed, All Rights Reserved Copyright </span>
-        <div class="totop">
-          <a href="#" uk-totop uk-scroll></a>
+  <!-- START TESTIMONIAL SECTION  -->
+  <section id="testimonial" class="scroll-fast">
+    <div class="container">
+      <div class="testimonial-container" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
+        <div class="testimonial-items">
+          <div class="quote">
+            <img src="img/quote.png" alt="">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+            tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo
+            consequat.
+          </p>
+          <div class="signature">
+            <img src="img/signature.png" alt="">
+          </div>
+          <h4>Deniel Croft</h4>
+          <span>Creative Designer, Levy</span>
         </div>
       </div>
-    </footer>
-    <!------------------ END FOOTER SECTION ------------------>
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+    </div>
+  </section>
+  <!-- END TESTIMONIAL SECTION  -->
+
+  <!-- START CONTACT SECTION  -->
+  <section id="contact" class="scroll-fast">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-items">
+          <h3>Leave a message</h3>
+          <form action="#" method="post">
+            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+              <input type="text" placeholder="Name*" required>
+            </div>
+            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+              <input type="email" placeholder="Email*" required>
+            </div>
+            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+              <input type="text" placeholder="Subject*" required>
+            </div>
+            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+              <textarea style="resize: none" cols="30" rows="10" placeholder="Message*" required>
+                </textarea>
+            </div>
+            <div class="form-btn" uk-scrollspy="cls: uk-animation-shake; repeat: true;">
+              <input type="submit" value="Hire Me!" class="btn">
+            </div>
+          </form>
+        </div>
+        <div class="contact-items contact-items-right">
+          <div class="nested-items">
+            <h3>Address</h3>
+            <p>
+              Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134,
+              Block SE(A), Gulshan-1, Dhaka 1212.
+            </p>
+          </div>
+          <div class="nested-items">
+            <h3>Phone</h3>
+            <p>
+              +880 174 037 6995 <br>
+              +880 191 448 6969
+            </p>
+          </div>
+          <div class="nested-items">
+            <h3>Web</h3>
+            <p>
+              Mail: quicksayed@gmail.com <br>
+              Website: dribbble.com/alisayed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CONTACT SECTION  -->
+
+  <!-- START FOOTER SECTION  -->
+  <footer id="footer" class="scroll-fast">
+    <div class="footer-icons" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+      <ul>
+        <li>
+          <a href=""><i class="lni lni-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lni lni-twitter-original"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lni lni-linkedin"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lni lni-github"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="lni lni-dribbble"></i></a>
+        </li>
+      </ul>
+      <span> Copyright &copy; Ali Sayed, All Rights Reserved Copyright </span>
+      <div class="totop">
+        <a href="#" uk-totop uk-scroll></a>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER SECTION  -->
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

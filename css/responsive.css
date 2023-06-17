@@ -4,6 +4,10 @@
     margin: auto;
   }
 
+  .container-text {
+    width: 100%;
+  }
+
   .about-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -37,7 +41,17 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
+  .working-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
   body {
     font-size: 8px;
   }

@@ -24,10 +24,10 @@ particlesJS(
         },
       },
       color: {
-        value: "#ffffff",
+        value: ["#ffffff", "#A93E17"],
       },
       shape: {
-        type: "circle",
+        type: ["circle", "triangle"],
         stroke: {
           width: 0,
           color: "#000000",
@@ -42,7 +42,7 @@ particlesJS(
         },
       },
       opacity: {
-        value: 0.5,
+        value: 0.9,
         random: false,
         anim: {
           enable: false,
@@ -52,7 +52,7 @@ particlesJS(
         },
       },
       size: {
-        value: 3,
+        value: 8,
         random: true,
         anim: {
           enable: false,
@@ -63,7 +63,7 @@ particlesJS(
       },
       line_linked: {
         enable: true,
-        distance: 150,
+        distance: 120,
         color: "#ffffff",
         opacity: 0.4,
         width: 1,
@@ -74,7 +74,7 @@ particlesJS(
         direction: "none",
         random: false,
         straight: false,
-        out_mode: "out",
+        // out_mode: "out",
         bounce: false,
         attract: {
           enable: false,
@@ -87,7 +87,7 @@ particlesJS(
       detect_on: "canvas",
       events: {
         onhover: {
-          enable: false,
+          enable: true,
           mode: "repulse",
         },
         onclick: {
