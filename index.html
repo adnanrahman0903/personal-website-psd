@@ -21,7 +21,7 @@
 <body>
   <!-- START HERO SECTION  -->
   <header id="hero" class="scroll-fast">
-    <nav uk-sticky="start: 400px; animation: uk-animation-slide-top">
+    <nav data-uk-sticky="start: 400px; animation: uk-animation-slide-top">
       <div class="container">
         <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
         <a><i class="lni lni-menu nav-icon" onclick="openMenu()"></i></a>
@@ -58,11 +58,11 @@
       </div>
     </nav>
     <div class="container-text">
-      <h1 uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+      <h1 data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
         Paul Lapkin
       </h1>
       <br>
-      <span uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+      <span data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
         #User Experience #Music #Creative Direction
       </span>
     </div>
@@ -78,10 +78,11 @@
   <section id="about" class="scroll-fast">
     <div class="container">
       <div class="about-container">
-        <div class="about-item-left" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+        <div class="about-item-left" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
           <img src="img/about.jpg" alt="paul" class="author-img">
         </div>
-        <div class="about-item-right" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
+        <div class="about-item-right"
+          data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
           <h5 class="heading">
             Hi, I’m Paul Lapkin, Experience Crafter from Canada.
           </h5>
@@ -109,11 +110,11 @@
   <section id="process" class="scroll-fast">
     <div class="container">
       <div class="working-container">
-        <div class="section-title" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+        <div class="section-title" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
           <h2>My Working Process</h2>
           <p>Hi, I’m Paul Lapkin, Experience Crafter from Canada.</p>
         </div>
-        <div class="working-skills" uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 500">
+        <div class="working-skills" data-uk-scrollspy="cls: uk-animation-fade; repeat: true; delay: 500">
           <div class="skills">
             <i class="lni lni-display"></i>
             <h4>Design</h4>
@@ -140,7 +141,7 @@
   <section id="experience" class="scroll-fast">
     <div class="container">
       <div class="experience-container">
-        <div class="experience-item" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
+        <div class="experience-item" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true; delay: 500">
           <h2>Work Experience</h2>
           <div class="job">
             <h3>Mad Max Design</h3>
@@ -162,7 +163,7 @@
             </p>
           </div>
         </div>
-        <div class="education-item" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
+        <div class="education-item" data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
           <h2>Education</h2>
           <div class="education">
             <h3>Maddison University</h3>
@@ -196,20 +197,20 @@
         <h2>My Latest Works</h2>
         <p>Hi, I’m Paul Lapkin, Experience Crafter from Canada.</p>
       </div>
-      <div class="filter-items" uk-scrollspy="cls: uk-animation-scale-up; repeat: true; delay: 500">
+      <div class="filter-items" data-uk-scrollspy="cls: uk-animation-scale-up; repeat: true; delay: 500">
         <button type="button" data-filter="all">All</button>
         <button type="button" data-filter=".design">Design</button>
         <button type="button" data-filter=".development">Development</button>
         <button type="button" data-filter=".wordpress">WordPress</button>
       </div>
-      <div class="portfolio-container" uk-lightbox="animation: fade">
+      <div class="portfolio-container" data-uk-lightbox="animation: fade">
         <div class="portfolio-img mix design wordpress">
           <a href="img/w1.jpg" data-caption="1">
             <img src="img/w1.jpg" alt="">
           </a>
         </div>
         <div class="portfolio-img mix development wordpress">
-          <a href="img/w2.jpg" data-caption="2" data-caption="1">
+          <a href="img/w2.jpg" data-caption="2">
             <img src="img/w2.jpg" alt="">
           </a>
         </div>
@@ -251,7 +252,8 @@
   <!-- START TESTIMONIAL SECTION  -->
   <section id="testimonial" class="scroll-fast">
     <div class="container">
-      <div class="testimonial-container" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
+      <div class="testimonial-container"
+        data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true; delay: 500">
         <div class="testimonial-items">
           <div class="quote">
             <img src="img/quote.png" alt="">
@@ -281,20 +283,20 @@
         <div class="contact-items">
           <h3>Leave a message</h3>
           <form action="#" method="post">
-            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+            <div class="single-form" data-uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
               <input type="text" placeholder="Name*" required>
             </div>
-            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+            <div class="single-form" data-uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
               <input type="email" placeholder="Email*" required>
             </div>
-            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+            <div class="single-form" data-uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
               <input type="text" placeholder="Subject*" required>
             </div>
-            <div class="single-form" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+            <div class="single-form" data-uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
               <textarea style="resize: none" cols="30" rows="10" placeholder="Message*" required>
                 </textarea>
             </div>
-            <div class="form-btn" uk-scrollspy="cls: uk-animation-shake; repeat: true;">
+            <div class="form-btn" data-uk-scrollspy="cls: uk-animation-shake; repeat: true;">
               <input type="submit" value="Hire Me!" class="btn">
             </div>
           </form>
@@ -329,7 +331,7 @@
 
   <!-- START FOOTER SECTION  -->
   <footer id="footer" class="scroll-fast">
-    <div class="footer-icons" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
+    <div class="footer-icons" data-uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true; delay: 500">
       <ul>
         <li>
           <a href=""><i class="lni lni-facebook"></i></a>
@@ -349,7 +351,7 @@
       </ul>
       <span> Copyright &copy; Ali Sayed, All Rights Reserved Copyright </span>
       <div class="totop">
-        <a href="#" uk-totop uk-scroll></a>
+        <a href="#" data-uk-totop data-uk-scroll></a>
       </div>
     </div>
   </footer>
